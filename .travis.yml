@@ -1,5 +1,11 @@
 language: sh
 
+addons:
+  - postgresql: 9.6
+  - snaps:
+    - name: docker
+      channel: latest/beta
+
 before_install:
   - echo $TRAVIS_COMMIT
   - echo $TRAVIS_TAG
