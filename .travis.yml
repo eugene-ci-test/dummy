@@ -1,6 +1,7 @@
 language: sh
 
 addons:
+  - rethinkdb: '2.3.4'
   - postgresql: 9.6
   - snaps:
     - name: docker
